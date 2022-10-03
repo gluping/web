@@ -12,7 +12,7 @@ function Header()  {
         className='header__logo'
         src="https://raw.githubusercontent.com/gluping/Gluping_website/master/proapp/images/logos/logo-app.png" 
         alt="logo" /> 
-        <IconButton><ForumIcon  className='header__icon' fontSize='large'/></IconButton><ForumIcon  className='header__icon' fontSize='large'/>
+        <IconButton><ForumIcon  className='header__icon' fontSize='large'/></IconButton>
       </div>
     )
   }
