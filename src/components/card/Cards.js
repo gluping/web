@@ -2,8 +2,7 @@
 import  {  React, useEffect, useState} from 'react';
 import TinderCard from 'react-tinder-card';
 import "./Cards.css"
-import Header from './Header';
-import database  from './firebase';
+import database  from '../../firebase';
 
 //import database from './firebase';
 
@@ -27,7 +26,7 @@ const [people, setPeople] = useState([]);
    return (
       <div>
         
-        <Header/>
+       
         <div className="glupingCards___cardContainer">
         {people.map(Person =>(
             <TinderCard
