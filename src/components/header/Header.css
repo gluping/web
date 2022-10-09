@@ -6,7 +6,9 @@
 }
 .header__logo{
     height: 40px;
-    object-fit: contain;
+    object-fit:contain;
+    height: auto;
+    width: auto;
      
 }
 
