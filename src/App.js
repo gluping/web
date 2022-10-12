@@ -1,5 +1,5 @@
 
-import './App.css';
+
 //import Header from './Header';
 import {
   BrowserRouter as Router,
@@ -7,7 +7,10 @@ import {
   Route,Switch,
   
 } from "react-router-dom";
-import Cards from './Cards';
+
+import Home from './pages/home/Home';
+import { Login } from "./pages/login/Login";
+import { Register } from "./pages/register/Register";
 
 
 function App() {
@@ -18,13 +21,25 @@ function App() {
       
       <Router>
         <Switch>
+
           <Route path="/chat">
             <h1>am chat</h1>
           </Route>
+
           <Route path="/swipe">
-            
-            <Cards/>
+            <Home/>
           </Route>
+
+          <Route path="/register">
+            <Register/>
+          </Route>
+
+          <Route path="/login">
+            <Login />
+          </Route>
+
+
+
         </Switch>
       </Router>
       
