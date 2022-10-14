@@ -11,9 +11,14 @@ const [people, setPeople] = useState([]);
 
 
    useEffect (() =>{
+    const unsubscribe = 
         database.collection('people').onSnapshot(snapshot => (
                setPeople(snapshot.docs.map(doc => doc.data()))
-        ))
+        ));
+        return () => {
+          // ivdethe code willmake sure oruvattam vannavan ini varilla ah code ondakkanam
+        unsubscribe();
+        }
    },[]);
     
     
@@ -24,7 +29,7 @@ const [people, setPeople] = useState([]);
    
    
    return (
-      <div>
+      <div >
         
        
         <div className="glupingCards___cardContainer">
