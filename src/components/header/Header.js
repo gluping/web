@@ -11,7 +11,7 @@ function Header({backButton})  {
     return (
       <div className='header'> 
       {backButton? (
-        <IconButton onClick={() => History.replace(backButton)} >    
+        <IconButton onClick={() => history.replace(backButton)} >    
               <ArrowBackIosIcon fontSize='large' className=''/>
         </IconButton>
         
@@ -26,7 +26,7 @@ function Header({backButton})  {
         alt="logo" /> </Link>
         
         
-        <Link to="/chats"><IconButton><ForumIcon  className='header__icon' fontSize='large'/></IconButton></Link>
+        <Link to="/chat"><IconButton><ForumIcon  className='header__icon' fontSize='large'/></IconButton></Link>
       </div>
     )
   }

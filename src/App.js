@@ -10,10 +10,11 @@ import {
 import Cards from "./components/card/Cards";
 import Header from "./components/header/Header";
 import Chats from "./Chats";
-import Home from './pages/home/Home';
+//import Home from './pages/home/Home';
 import { Login } from "./pages/login/Login";
 import { Register } from "./pages/register/Register";
 import SwipeButtons from "./SwipeButtons";
+import ChatScreen from './ChatScreen';
 
 
 function App() {
@@ -25,7 +26,15 @@ function App() {
       <Router>
         <Switch>
 
-          <Route path="/chats">
+        <Route path="/chat/:person">
+          <Header backButton="/chat"/>
+
+
+          
+            <ChatScreen/>
+          </Route>
+
+          <Route path="/chat">
           <Header backButton="/"/>
 
 
