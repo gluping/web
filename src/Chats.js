@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react'; 
+import Chat from './Chat';
 
 function Chats() {
   return (
     <div>
-      <chat
+      <Chat
       name="Lana Rhoades"
       message="hey honn"
       timestamp="5 minutes ago"
@@ -11,7 +12,7 @@ function Chats() {
       />
     
 
-    <chat
+    <Chat
       name="Sheena Raider"
       message="wake up .."
       timestamp="1 minutes ago"
@@ -19,7 +20,7 @@ function Chats() {
       />
 
 
-<chat
+<Chat
       name="Cory Chase"
       message="hi.."
       timestamp="35 minutes ago"
@@ -27,7 +28,7 @@ function Chats() {
       />
 
 
-<chat
+<Chat
       name="Dani Daniels"
       message="hello..."
       timestamp="1 minute ago"
